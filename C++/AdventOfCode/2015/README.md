@@ -1,14 +1,13 @@
 # [Advent of Code 2015](https://adventofcode.com/2015/)
 
+## Description
+
+
 ## Run
-Script can be run from a parent directory:
+
+Compile the code using Visual Studio 2019 and then run
 ```shell
-python 2015\1\code.py 2015\1\input.txt
-```
-Or set current directory to wanted solution folder:
-```shell
-cd 2015\1
-python code.py input.txt
+AdventOfCode.exe < \2015\Day01.txt
 ```
 
 ## Progress
@@ -16,7 +15,7 @@ python code.py input.txt
 
 | Day | Name | Status | Time | Solution | 
 |:---:|:---|:---:|:---:|:---|
-| 01 | [Not Quite Lisp](https://adventofcode.com/2015/day/1) | ✓ | <1ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/1/code.py) |
+| 01 | [Not Quite Lisp](https://adventofcode.com/2015/day/1) | ✓ | <1ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015/Day01.cpp) |
 | 02 | [I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2) | ½ | - | - |
 | 03 | [Perfectly Spherical Houses in a Vacuum](https://adventofcode.com/2015/day/3) | - | - | - |
 | 04 | [The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4) | - | - | - |

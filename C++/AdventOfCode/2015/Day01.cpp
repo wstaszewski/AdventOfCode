@@ -42,7 +42,8 @@ public:
 
 		std::cout << "--- Day 1: Not Quite Lisp ---" << std::endl;
 		std::cout << "Part 1: " << p1 << " done in " << t_part1 << "ms" << std::endl;
-		std::cout << "Part 2: " << p2 << " done in " << t_part2 << "ms" << std::endl << std::endl;
+		std::cout << "Part 2: " << p2 << " done in " << t_part2 << "ms" << std::endl;
+		std::cout << t_part1 + t_part2 << "ms" << std::endl << std::endl;
 		return 0;
 	}
 };

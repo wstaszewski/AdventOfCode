@@ -1,2 +1,16 @@
-# AdventOfCode
-Solutions to Advent of Code tasks, from various years, in various langanges.
+# Advent of Code
+[Advent of Code](https://adventofcode.com/) in [C++](https://docs.microsoft.com/en-us/cpp/cpp/cpp-language-reference)
+
+### Background
+The aim of project is to explore the world of C++17 STL while implementing various programming puzzles from annual Competitive Programming Challange - AoC.
+
+### Progress
+
+| Year | Status
+|:---:|:---|
+|Advent of Code 2020 | - |
+|Advent of Code 2019 | - |
+|Advent of Code 2018 | - |
+|Advent of Code 2017 | - |
+|Advent of Code 2016 | - |
+|Advent of Code 2015 | <sup>1</sup>&frasl;<sub>25</sub> |
