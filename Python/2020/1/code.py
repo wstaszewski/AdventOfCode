@@ -23,9 +23,8 @@ for i in range(n):
     for j in range(i, n):
         if X[i]+X[j] == 2020:
             part1 = X[i]*X[j]
-            end_time = datetime.datetime.now()
-            time_diff = (end_time - start_time)
-            time_elapsed_ms = time_diff.total_seconds() * 1000
+            time_elapsed_ms = (datetime.datetime.now() -
+                               start_time).total_seconds() * 1000
             ttime += time_elapsed_ms
 print(f"Part One: ", part1, "done in", "%.4f" % time_elapsed_ms,  "ms")
 
@@ -37,9 +36,8 @@ for i in range(n):
         for k in range(j+1, n):
             if X[i]+X[j]+X[k] == 2020:
                 part2 = X[i]*X[j]*X[k]
-                end_time = datetime.datetime.now()
-                time_diff = (end_time - start_time).total_seconds() * 1000
-                time_elapsed_ms = time_diff
+                time_elapsed_ms = (datetime.datetime.now() -
+                                   start_time).total_seconds() * 1000
                 ttime += time_elapsed_ms
 print(f"Part Two: ", part2, "done in", "%.4f" % time_elapsed_ms,  "ms")
 
