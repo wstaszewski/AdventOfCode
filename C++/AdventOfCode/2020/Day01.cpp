@@ -4,27 +4,28 @@
 #include <algorithm>
 #include <chrono>
 
-namespace AoC2015
+namespace AoC2020
 {
 
 	class Day01
 	{
 	private:
-		int part_one(const std::string& s)
+		int part_one(const std::vector<int>& vec)
 		{
-			return (int)(std::count(s.begin(), s.end(), '(') - count(s.begin(), s.end(), ')'));
+			for (auto a : vec)
+				for (auto b : vec)
+					if (a + b == 2020)
+						return  a * b;
+			return -1;
 		}
 
-		int part_two(const std::string& s)
+		int part_two(const std::vector<int>& vec)
 		{
-			int c = 0;
-			for (size_t i = 0; i < s.size(); i++)
-			{
-				if ('(' == s[i]) c++;
-				if (')' == s[i]) c--;
-				if (-1 == c)
-					return int(i) + 1;
-			}
+			for (auto a : vec)
+				for (auto b : vec)
+					for (auto c : vec)
+						if (a + b + c == 2020)
+							return  a * b * c;
 
 			return -1;
 		}
@@ -33,18 +34,21 @@ namespace AoC2015
 		int main()
 		{
 			std::string line;
-			std::getline(std::cin, line);
+			std::vector<int> vec;
+			for (std::string line; std::getline(std::cin, line);)
+				vec.push_back(stoi(line));
+
 
 			auto t0 = std::chrono::steady_clock::now();
-			int p1 = part_one(line);
+			int p1 = part_one(vec);
 			auto t1 = std::chrono::steady_clock::now();
-			int p2 = part_two(line);
+			int p2 = part_two(vec);
 			auto t2 = std::chrono::steady_clock::now();
 
 			auto t_part1 = std::chrono::duration<double>((t1 - t0) * 1000).count();
 			auto t_part2 = std::chrono::duration<double>((t2 - t1) * 1000).count();
 
-			std::cout << "--- Day 1: Not Quite Lisp ---" << std::endl;
+			std::cout << "--- Day 1: Report Repair ---" << std::endl;
 			std::cout << "Part 1: " << p1 << " done in " << t_part1 << "ms" << std::endl;
 			std::cout << "Part 2: " << p2 << " done in " << t_part2 << "ms" << std::endl;
 			std::cout << t_part1 + t_part2 << "ms" << std::endl << std::endl;

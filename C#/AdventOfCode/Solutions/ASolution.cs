@@ -76,8 +76,8 @@ namespace AdventOfCode.Solutions
                 }
             }
 
-            
-            output += $"{Int32.Parse(TPart1) + Int32.Parse(TPart2)} ms\n";
+            if(!string.IsNullOrEmpty(TPart1) && !string.IsNullOrEmpty(TPart2))
+                output += $"{Int32.Parse(TPart1) + Int32.Parse(TPart2)} ms\n";
             if (doOutput) Console.WriteLine(output);
         }
 

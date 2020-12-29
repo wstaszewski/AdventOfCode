@@ -16,6 +16,9 @@
     <Filter Include="Source Files\2015">
       <UniqueIdentifier>{a9ab931c-46c8-40cd-a95b-4f984834a804}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2020">
+      <UniqueIdentifier>{e83cd862-9cf0-4ed3-8119-6056fcbda62d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2015\Day01.cpp">
@@ -24,10 +27,16 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2020\Day01.cpp">
+      <Filter>Source Files\2020</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="2015\Day01.txt">
       <Filter>Source Files\2015</Filter>
+    </Text>
+    <Text Include="2020\Day01.txt">
+      <Filter>Source Files\2020</Filter>
     </Text>
   </ItemGroup>
 </Project>

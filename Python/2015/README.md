@@ -5,14 +5,8 @@ Script can be run from a parent directory:
 ```shell
 python 2015\1\code.py 2015\1\input.txt
 ```
-Or set current directory to wanted solution folder:
-```shell
-cd 2015\1
-python code.py input.txt
-```
 
 ## Progress
-
 
 | Day | Name | Status | Time | Solution | 
 |:---:|:---|:---:|:---:|:---|
