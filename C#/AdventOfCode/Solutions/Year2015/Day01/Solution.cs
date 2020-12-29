@@ -11,7 +11,7 @@ namespace AdventOfCode.Solutions.Year2015
 
         protected override string SolvePartOne()
         {
-            return "232";
+            //return "232";
             int countUp = Input.Count(c => c == '(');
             int countDown = Input.Count(c => c == ')');
             int res = countUp - countDown;
@@ -20,7 +20,7 @@ namespace AdventOfCode.Solutions.Year2015
 
         protected override string SolvePartTwo()
         {
-            return "1783";
+            //return "1783";
             int position = 1;
             int level = 0;
             foreach (char c in Input.ToCharArray())

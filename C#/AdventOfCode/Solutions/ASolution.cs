@@ -8,7 +8,7 @@ namespace AdventOfCode.Solutions
     abstract class ASolution
     {
 
-        Lazy<string> _input, _part1, _part2;
+        Lazy<string> _input, _part1, _part2, _tpart1, _tpart2;
 
         public int Day { get; }
         public int Year { get; }
@@ -17,6 +17,8 @@ namespace AdventOfCode.Solutions
         public string Input => DebugInput != null ? DebugInput : (string.IsNullOrEmpty(_input.Value) ? null : _input.Value);
         public string Part1 => string.IsNullOrEmpty(_part1.Value) ? "" : _part1.Value;
         public string Part2 => string.IsNullOrEmpty(_part2.Value) ? "" : _part2.Value;
+        public string TPart1;
+        public string TPart2;
 
         public bool SubmitAutomatically { get; }
 
@@ -26,8 +28,14 @@ namespace AdventOfCode.Solutions
             Year = year;
             Title = title;
             _input = new Lazy<string>(() => LoadInput());
+            var watch = System.Diagnostics.Stopwatch.StartNew();
             _part1 = new Lazy<string>(() => SolvePartOne());
+            watch.Stop();
+            _tpart1 = new Lazy<string>(() => watch.ElapsedMilliseconds.ToString());
+            watch = System.Diagnostics.Stopwatch.StartNew();
             _part2 = new Lazy<string>(() => SolvePartTwo());
+            watch.Stop();
+            _tpart2 = new Lazy<string>(() => watch.ElapsedMilliseconds.ToString());
         }
 
         public void Solve(int part = 0)
@@ -45,7 +53,7 @@ namespace AdventOfCode.Solutions
             {
                 if (Part1 != "")
                 {
-                    output += $"Part 1: {Part1}\n";
+                    output += $"Part 1: {Part1} done in {TPart1} ms\n";
                     doOutput = true;
                 }
                 else
@@ -58,7 +66,7 @@ namespace AdventOfCode.Solutions
             {
                 if (Part2 != "")
                 {
-                    output += $"Part 2: {Part2}\n";
+                    output += $"Part 2: {Part2} done in {TPart2} ms\n";
                     doOutput = true;
                 }
                 else
@@ -68,6 +76,8 @@ namespace AdventOfCode.Solutions
                 }
             }
 
+            
+            output += $"{Int32.Parse(TPart1) + Int32.Parse(TPart2)} ms\n";
             if (doOutput) Console.WriteLine(output);
         }
 
