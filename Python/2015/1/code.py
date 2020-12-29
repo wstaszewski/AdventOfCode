@@ -3,7 +3,7 @@
 import sys
 import fileinput
 import re
-import time
+import datetime
 
 input = ""
 if(len(sys.argv) > 1):
@@ -16,17 +16,17 @@ else:
 print("--- Day 1: Not Quite Lisp ---")
 ttime = 0
 # Part 1
-start = time.perf_counter()
+start_time = datetime.datetime.now()
 part1 = input.count('(') - input.count(')')
-end = time.perf_counter()
-time_elapsed_ms = (end-start)*100
+end_time = datetime.datetime.now()
+time_diff = (end_time - start_time)
+time_elapsed_ms = time_diff.total_seconds() * 1000
 ttime += time_elapsed_ms
 print(f"Part One: ", part1, "done in", "%.4f" % time_elapsed_ms,  "ms")
 
 # Part 2
 part2 = 0
-time_elapsed_ms = 0
-start = time.perf_counter()
+start_time = datetime.datetime.now()
 floor = 0
 for i, char in enumerate(input):
     if(char == '('):
@@ -35,10 +35,11 @@ for i, char in enumerate(input):
         floor -= 1
     if(floor == -1):
         part2 = i+1
-        end = time.perf_counter()
-        time_elapsed_ms = (end-start)*100
+        end_time = datetime.datetime.now()
+        time_diff = (end_time - start_time)
+        time_elapsed_ms = time_diff.total_seconds() * 1000
+        ttime += time_elapsed_ms
         break
 print(f"Part Two: ", part2, "done in", "%.4f" % time_elapsed_ms,  "ms")
 
-ttime += time_elapsed_ms
 print(ttime, "ms")

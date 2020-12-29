@@ -13,7 +13,7 @@ python 2015\1\code.py 2015\1\input.txt
 
 | Day | Name | Status | Time | Solution | 
 |:---:|:---|:---:|:---:|:---|
-| 01 | [Report Repair](https://adventofcode.com/2020/day/1) | ✓ | 191ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2020/1/code.py) |
+| 01 | [Report Repair](https://adventofcode.com/2020/day/1) | ✓ | 80ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2020/1/code.py) |
 | 02 | [Password Philosophy](https://adventofcode.com/2020/day/2) | ½ | - | - |
 | 03 | [Toboggan Trajectory](https://adventofcode.com/2020/day/3) | - | - | - |
 | 04 | [Passport Processing](https://adventofcode.com/2020/day/4) | - | - | - |
