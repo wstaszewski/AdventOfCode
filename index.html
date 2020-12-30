@@ -4,93 +4,188 @@
 <title>Advent of Code</title>
 <link rel="icon" href="favicon.ico"/>
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+<!-- Christmass Tree from AoC -->
+<!--uncomment when done..-->
+<!--<link href="tree2015.css" rel="stylesheet" type = "text/css">-->
 </head>
 <style>
 body { background: #0f0f23; color: #cccccc; font-family: "Source Code Pro", monospace; font-size: 12pt; min-width: 60em; }
 table { font-family: "Source Code Pro", monospace; font-size: 12pt; }
 a { text-decoration: none; color: #009900; }
 b { color: white; }
-td { padding: 5px; padding-left: 10px; vertical-align: top; text-align: center; }
+td { padding-left: 10px; vertical-align: top; text-align: center; }
 .day-text {width: 20%}
 .tc { text-align: center; min-width: 80px; }
-.task { text-align: left; }
+.task { text-align: left;}
+.empty { width: 550px; }
 .sep { padding-top: 10px; }
 .dwn { padding-top: 0px; }
 .day-success { color: #ffff66; text-shadow: 0 0 5px #ffff66; }
 .day-nosuccess { color: #ffffff; }
+
+/* Grid Definition */
+/* Create two equal columns that floats next to each other */
+.column-solutions {  float: left; padding: 10px;}
+.column-animation {  float: right; padding: 10px;}
+
+
+/* Columns */
+.col-1 {float: left; width: 8.33%;}
+.col-2 {float: left; width: 16.66%;}
+.col-3 {float: left; width: 25%;}
+.col-4 {float: left; width: 33.33%;}
+.col-5 {float: left; width: 41.66%;}
+.col-6 {float: left; width: 50%;}
+.col-7 {float: left; width: 58.33%;}
+.col-8 {float: left; width: 66.66%;}
+.col-9 {float: left; width: 75%;}
+.col-10 {float: left; width: 83.33%;}
+.col-11 {float: left; width: 91.66%;}
+.col-12 {float: left; width: 100%;}
+
 </style>
 <body>
 <p>Below you can find the solutions for <a href="https://adventofcode.com/" target="_blank">Advent of Code</a> puzzles from various years, written in various languages.</p>
 <p>Solutions:</p>
-<table>
-    <tr><td>Year</td><td>Task</td><td class=tc>C#</td><td>time</td><td class=tc>C++</td><td>time</td><td class=tc>Python</td><td>time</td></tr>
+
+<!-- # 2020 # -->
+<div class="row">
+    <div class="col-7">
+        <!-- Solutions -->
+        <table>
+            <tr><td>Year</td><td>Task</td><td class=tc>C#</td><td>time</td><td class=tc>C++</td><td>time</td><td class=tc>Python</td><td>time</td></tr>
+            
+            <!--<tr><td class=sep></td></tr>-->
+            <td rowspan=1><b>2020</b>:</td>
+            <td class="empty"></td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2020" target="_blank">link</a></td>
+            <td></td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2020" target="_blank">link</a></td>
+            <td></td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2020" target="_blank">link</a></td>
+        </tr>   
+            <td></td>
+            <td class=task>--- <a href="https://adventofcode.com/2020/day/1" target="_blank">Day 1</a>: Report Repair ---</td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2020/Day01/Solution.cs" class=day-success target="_blank">[**]</a></td>
+            <td>&lt;1ms</td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2020/Day01.cpp" class=day-success target="_blank">[**]</a></td>
+            <td>&lt;1ms</td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2020/1/code.py" class=day-success target="_blank">[**]</a></td>
+            <td>80ms</td>
+            <tr><td class=sep></td></tr>
+            <tr><td class=sep></td></tr>
+            <tr><td class=sep></td></tr>
+
+        </table>
+    </div>
+    <div class="col-5" style="font-size: 21px; padding-top: 25px;">
+      <!-- Animation -->
+      <!---->
+      
+      <pre class="calendar calendar-beckon">
+        <a aria-label="Day 1" class="calendar-day1">              ..........|..........                </a>
+        <!--<a aria-label="Day 2" class="calendar-day2">   .....'''''' .'  -  -   - .''~ ~ ''''''.....     </a>
+        <a aria-label="Day 3" class="calendar-day3">''' ~ ~ ~ ~  ~ '.'. -   -   -'':  ~ ~   ~  ~  '''  </a>
+        <a aria-label="Day 4" class="calendar-day4"> ~   ~  ~   ~ ~  ~ ''..'''.  .'  ~    ~   ~ ~  ~   </a>
+        <a aria-label="Day 5" class="calendar-day5">~   ~ ~  .'. ~  ~  ~    ~  ''  ~  ~  ~  ~  ~    ~  </a>
+        <a aria-label="Day 6" class="calendar-day6">  ~    ~ ''  ..  ~    ~   ~  ~  ~    _ ~ _   O&gt;    </a>
+        <a aria-label="Day 7" class="calendar-day7"> ~  ~ ~   ~ :  '.   ~   ~      ~  \ / \ / \ /  ~   </a>
+        <a aria-label="Day 8" class="calendar-day8">       ~     '.' ~        ~  ~   ~  ~      ~    ~  </a>
+        <a aria-label="Day 17" class="calendar-day17"> ~   ~      ~      ~   ~        ~      ~      ~    </a>
+        <a aria-label="Day 9" class="calendar-day9">       ~       ~        .''''..    ~       ~    .  </a>
+        <a aria-label="Day 16" class="calendar-day16">    ~       ~       ~   .'^ , .'      ~  ~  ..''   </a>
+        <a aria-label="Day 18" class="calendar-day18">...     ~      ~        :^ , :   ~       :''  , ^  </a>
+        <a aria-label="Day 15" class="calendar-day15">###: ...    ~      ~     '..'          ~ '. ,      </a>
+        <a aria-label="Day 19" class="calendar-day19">.'' .'##'.             ~       ~   ~      :  , ^   </a>
+        <a aria-label="Day 10" class="calendar-day10">'...'#####'.  ~    ~      ~            .'' ,  ^ ^  </a>
+        <a aria-label="Day 14" class="calendar-day14">##### ,###.'               .       ~   '.    , ^   </a>
+        <a aria-label="Day 20" class="calendar-day20">#,      , '.         ~  .'',:  ~         '..  , ^  </a>
+        <a aria-label="Day 11" class="calendar-day11">   ~ ~   , ,'.   ~     :, ..'           ~   ''...  </a>
+        <a aria-label="Day 13" class="calendar-day13">~ ~ ~ ~     , :         ''     ~                   </a>
+        <a aria-label="Day 21" class="calendar-day21"> ~ ~ ~ ~ ~ , ,:     ~     ~          ~      ~      </a>
+        <a aria-label="Day 12" class="calendar-day12">~ ~ ~ ~ ~  , .'                                    </a>
+        <a aria-label="Day 22" class="calendar-day22"> ~ ~ ~    ..'   ~               ~         ~    ~   </a>
+        <a aria-label="Day 23" class="calendar-day23">  .....'''           ~     ~                       </a>
+        <a aria-label="Day 24" class="calendar-day24">''         ~                 .'..   .''..       ~  </a>
+        <a aria-label="Day 25" class="calendar-day25">     ~          ~        ~    '.'  :    .'  ~      </a>-->
+        </pre>
+    </div>
+</div>
+
+<!-- # 2015 # -->
+<div class="row">
+    <div class="col-7">
+        <!-- Solutions -->
+        <table>
+            <tr><td>Year</td><td>Task</td><td class=tc>C#</td><td>time</td><td class=tc>C++</td><td>time</td><td class=tc>Python</td><td>time</td></tr>
+            
+            <td rowspan=1><b>2015</b>:</td>
+            <td class="empty"></td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015" target="_blank">link</a></td>
+            <td></td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015" target="_blank">link</a></td>
+            <td></td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015" target="_blank">link</a></td>
+        </tr>    
+            <td></td>
+            <td class=task>--- <a href="https://adventofcode.com/2015/day/1" target="_blank">Day 1</a>: Not Quite Lisp ---</td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day01/Solution.cs" class=day-success target="_blank">[**]</a></td>
+            <td>&lt;1ms</td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015/Day01_2015.cpp" class=day-success target="_blank">[**]</a></td>
+            <td>&lt;1ms</td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/1/code.py" class=day-success target="_blank">[**]</a></td>
+            <td>&lt;1ms</td>
+        </tr>
+            <td></td>
+            <td class=task>--- <a href="https://adventofcode.com/2015/day/2" target="_blank">Day 2</a>: I Was Told There Would Be No Math ---</td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day02/Solution.cs" class=day-success target="_blank">[**]</a></td>
+            <td>2ms</td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015/Day02_2015.cpp" class=day-success target="_blank">[**]</a></td>
+            <td>&lt;1ms</td>
+            <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/2/code.py" class=day-success target="_blank">[**]</a></td>
+            <td>7ms</td>
+        </tr>
+
+        </table>
+    </div>
+    <div class="col-5" style="font-size: 21px; padding-top: 25px;">
+      <!-- Animation -->
+      <pre class="calendar calendar-beckon">
+        <!--<a aria-label="Day 25" href="/2015/day/25" class="calendar-day25">                        *                          </a>
+        <a aria-label="Day 24" class="calendar-day24">                       &gt;<span class="calendar-ornament1">o</span>&lt;                         </a>
+        <a aria-label="Day 23" class="calendar-day23">                      &gt;<span class="calendar-ornament3">*</span>&lt;<span class="calendar-ornament1">o</span>&lt;                        </a>
+        <a aria-label="Day 22" class="calendar-day22">                     &gt;<span class="calendar-ornament0">O</span>&gt;<span class="calendar-ornament2">@</span>&lt;&lt;&lt;                       </a>
+        <a aria-label="Day 21" class="calendar-day21">                    &gt;&gt;<span class="calendar-ornament3">*</span>&gt;&gt;&gt;<span class="calendar-ornament3">*</span>&lt;&lt;                      </a>
+        <a aria-label="Day 20" class="calendar-day20">                   &gt;<span class="calendar-ornament3">*</span>&lt;<span class="calendar-ornament1">o</span>&gt;<span class="calendar-ornament2">@</span>&lt;&lt;<span class="calendar-ornament0">O</span>&lt;&lt;                     </a>
+        <a aria-label="Day 19" class="calendar-day19">                  &gt;<span class="calendar-ornament3">*</span>&lt;&lt;<span class="calendar-ornament2">@</span>&lt;&lt;&lt;<span class="calendar-ornament2">@</span>&lt;&lt;&lt;&lt;                    </a>
+        <a aria-label="Day 18" class="calendar-day18">                 &gt;&gt;<span class="calendar-ornament1">o</span>&gt;&gt;<span class="calendar-ornament3">*</span>&gt;&gt;&gt;<span class="calendar-ornament1">o</span>&lt;&lt;&lt;<span class="calendar-ornament2">@</span>&lt;                   </a>
+        <a aria-label="Day 17" class="calendar-day17">                &gt;&gt;<span class="calendar-ornament3">*</span>&gt;&gt;<span class="calendar-ornament1">o</span>&lt;&lt;&lt;<span class="calendar-ornament0">O</span>&gt;<span class="calendar-ornament0">O</span>&lt;&lt;&lt;<span class="calendar-ornament1">o</span>&lt;                  </a>
+        <a aria-label="Day 16" class="calendar-day16">               &gt;&gt;<span class="calendar-ornament0">O</span>&lt;<span class="calendar-ornament1">o</span>&gt;<span class="calendar-ornament0">O</span>&gt;<span class="calendar-ornament0">O</span>&gt;&gt;&gt;<span class="calendar-ornament0">O</span>&lt;&lt;&lt;<span class="calendar-ornament1">o</span>&lt;&lt;                 </a>
+        <a aria-label="Day 15" class="calendar-day15">              &gt;&gt;<span class="calendar-ornament3">*</span>&lt;<span class="calendar-ornament0">O</span>&lt;<span class="calendar-ornament2">@</span>&gt;&gt;<span class="calendar-ornament2">@</span>&lt;&lt;&lt;<span class="calendar-ornament1">o</span>&lt;&lt;<span class="calendar-ornament2">@</span>&lt;&lt;&lt;&lt;                </a>
+        <a aria-label="Day 14" class="calendar-day14">             &gt;&gt;<span class="calendar-ornament0">O</span>&gt;&gt;<span class="calendar-ornament2">@</span>&lt;&lt;<span class="calendar-ornament1">o</span>&gt;<span class="calendar-ornament2">@</span>&lt;&lt;<span class="calendar-ornament0">O</span>&lt;&lt;<span class="calendar-ornament2">@</span>&lt;&lt;<span class="calendar-ornament2">@</span>&lt;&lt;&lt;               </a>
+        <a aria-label="Day 13" class="calendar-day13">            &gt;&gt;<span class="calendar-ornament2">@</span>&gt;&gt;<span class="calendar-ornament3">*</span>&lt;<span class="calendar-ornament2">@</span>&gt;<span class="calendar-ornament0">O</span>&lt;<span class="calendar-ornament3">*</span>&lt;&lt;<span class="calendar-ornament3">*</span>&gt;<span class="calendar-ornament3">*</span>&lt;&lt;&lt;<span class="calendar-ornament2">@</span>&lt;&lt;&lt;&lt;              </a>
+        <a aria-label="Day 12" class="calendar-day12">           &gt;&gt;<span class="calendar-ornament0">O</span>&lt;<span class="calendar-ornament3">*</span>&lt;&lt;<span class="calendar-ornament0">O</span>&gt;&gt;<span class="calendar-ornament0">O</span>&gt;&gt;<span class="calendar-ornament3">*</span>&gt;<span class="calendar-ornament3">*</span>&lt;&lt;<span class="calendar-ornament1">o</span>&lt;<span class="calendar-ornament0">O</span>&lt;<span class="calendar-ornament1">o</span>&lt;&lt;&lt;&lt;             </a>
+        <a aria-label="Day 11" class="calendar-day11">          &gt;<span class="calendar-ornament2">@</span>&gt;&gt;<span class="calendar-ornament0">O</span>&lt;&lt;<span class="calendar-ornament0">O</span>&lt;&lt;&lt;<span class="calendar-ornament1">o</span>&lt;&lt;&lt;<span class="calendar-ornament3">*</span>&lt;&lt;<span class="calendar-ornament3">*</span>&lt;<span class="calendar-ornament3">*</span>&lt;&lt;<span class="calendar-ornament2">@</span>&lt;<span class="calendar-ornament3">*</span>&lt;&lt;&lt;            </a>
+        <a aria-label="Day 10" class="calendar-day10">         &gt;&gt;<span class="calendar-ornament1">o</span>&gt;&gt;<span class="calendar-ornament2">@</span>&lt;&lt;<span class="calendar-ornament3">*</span>&lt;&lt;&lt;<span class="calendar-ornament2">@</span>&lt;<span class="calendar-ornament2">@</span>&lt;&lt;&lt;<span class="calendar-ornament1">o</span>&gt;&gt;<span class="calendar-ornament0">O</span>&gt;<span class="calendar-ornament3">*</span>&gt;<span class="calendar-ornament1">o</span>&lt;&lt;&lt;<span class="calendar-ornament3">*</span>&lt;           </a>
+        <a aria-label="Day 9" class="calendar-day9">        &gt;&gt;<span class="calendar-ornament2">@</span>&lt;<span class="calendar-ornament0">O</span>&gt;&gt;&gt;<span class="calendar-ornament2">@</span>&gt;&gt;<span class="calendar-ornament2">@</span>&gt;<span class="calendar-ornament3">*</span>&lt;&lt;<span class="calendar-ornament0">O</span>&lt;<span class="calendar-ornament0">O</span>&gt;<span class="calendar-ornament2">@</span>&gt;<span class="calendar-ornament2">@</span>&gt;&gt;&gt;<span class="calendar-ornament0">O</span>&gt;&gt;<span class="calendar-ornament0">O</span>&lt;&lt;&lt;          </a>
+        <a aria-label="Day 8" class="calendar-day8">       &gt;<span class="calendar-ornament3">*</span>&lt;<span class="calendar-ornament1">o</span>&lt;<span class="calendar-ornament2">@</span>&lt;&lt;<span class="calendar-ornament3">*</span>&gt;&gt;<span class="calendar-ornament1">o</span>&lt;&lt;&lt;<span class="calendar-ornament1">o</span>&lt;&lt;&lt;<span class="calendar-ornament1">o</span>&lt;&lt;<span class="calendar-ornament3">*</span>&gt;<span class="calendar-ornament1">o</span>&gt;&gt;&gt;<span class="calendar-ornament0">O</span>&lt;<span class="calendar-ornament2">@</span>&lt;&lt;&lt;&lt;         </a>
+        <a aria-label="Day 7" class="calendar-day7">      &gt;&gt;<span class="calendar-ornament3">*</span>&lt;<span class="calendar-ornament0">O</span>&gt;&gt;<span class="calendar-ornament3">*</span>&gt;&gt;&gt;<span class="calendar-ornament3">*</span>&gt;&gt;&gt;<span class="calendar-ornament3">*</span>&lt;&lt;<span class="calendar-ornament1">o</span>&lt;&lt;&lt;<span class="calendar-ornament0">O</span>&lt;&lt;&lt;<span class="calendar-ornament2">@</span>&gt;&gt;<span class="calendar-ornament0">O</span>&gt;<span class="calendar-ornament2">@</span>&lt;&lt;<span class="calendar-ornament3">*</span>&lt;&lt;        </a>
+        <a aria-label="Day 6" class="calendar-day6">     &gt;&gt;<span class="calendar-ornament0">O</span>&lt;<span class="calendar-ornament1">o</span>&gt;&gt;<span class="calendar-ornament2">@</span>&lt;&lt;&lt;<span class="calendar-ornament2">@</span>&gt;&gt;&gt;<span class="calendar-ornament2">@</span>&gt;<span class="calendar-ornament1">o</span>&gt;&gt;&gt;<span class="calendar-ornament1">o</span>&gt;&gt;<span class="calendar-ornament1">o</span>&gt;<span class="calendar-ornament3">*</span>&gt;&gt;&gt;<span class="calendar-ornament2">@</span>&lt;&lt;<span class="calendar-ornament3">*</span>&gt;&gt;<span class="calendar-ornament0">O</span>&lt;&lt;       </a>
+        <a aria-label="Day 5" class="calendar-day5">    &gt;<span class="calendar-ornament0">O</span>&gt;&gt;&gt;<span class="calendar-ornament3">*</span>&gt;<span class="calendar-ornament3">*</span>&gt;&gt;&gt;<span class="calendar-ornament2">@</span>&gt;&gt;<span class="calendar-ornament1">o</span>&gt;&gt;<span class="calendar-ornament3">*</span>&gt;&gt;<span class="calendar-ornament1">o</span>&gt;&gt;&gt;<span class="calendar-ornament1">o</span>&gt;&gt;<span class="calendar-ornament1">o</span>&gt;&gt;&gt;<span class="calendar-ornament1">o</span>&lt;&lt;<span class="calendar-ornament1">o</span>&gt;<span class="calendar-ornament1">o</span>&gt;<span class="calendar-ornament0">O</span>&lt;&lt;      </a>
+        <a aria-label="Day 4" class="calendar-day4">   &gt;&gt;<span class="calendar-ornament0">O</span>&gt;&gt;<span class="calendar-ornament1">o</span>&gt;<span class="calendar-ornament2">@</span>&lt;<span class="calendar-ornament0">O</span>&gt;<span class="calendar-ornament2">@</span>&lt;<span class="calendar-ornament1">o</span>&lt;<span class="calendar-ornament3">*</span>&gt;&gt;&gt;<span class="calendar-ornament1">o</span>&lt;&lt;<span class="calendar-ornament3">*</span>&lt;&lt;<span class="calendar-ornament0">O</span>&gt;&gt;<span class="calendar-ornament0">O</span>&lt;&lt;&lt;<span class="calendar-ornament0">O</span>&gt;&gt;&gt;<span class="calendar-ornament1">o</span>&gt;&gt;<span class="calendar-ornament2">@</span>&lt;&lt;&lt;     </a>
+        <a aria-label="Day 3" class="calendar-day3">  &gt;&gt;<span class="calendar-ornament3">*</span>&gt;&gt;<span class="calendar-ornament2">@</span>&gt;&gt;&gt;<span class="calendar-ornament2">@</span>&lt;&lt;&lt;<span class="calendar-ornament2">@</span>&lt;&lt;&lt;<span class="calendar-ornament1">o</span>&gt;&gt;<span class="calendar-ornament2">@</span>&lt;&lt;<span class="calendar-ornament1">o</span>&lt;&lt;&lt;<span class="calendar-ornament2">@</span>&lt;&lt;&lt;<span class="calendar-ornament3">*</span>&gt;&gt;&gt;<span class="calendar-ornament1">o</span>&gt;&gt;&gt;<span class="calendar-ornament1">o</span>&gt;&gt;<span class="calendar-ornament0">O</span>&lt;&lt;    </a>-->
+        <a aria-label="Day 2" class="calendar-day2"> &gt;&gt;<span class="calendar-ornament1">o</span>&gt;&gt;&gt;<span class="calendar-ornament0">O</span>&lt;&lt;&lt;<span class="calendar-ornament3">*</span>&gt;&gt;<span class="calendar-ornament2">@</span>&gt;&gt;&gt;<span class="calendar-ornament2">@</span>&lt;&lt;<span class="calendar-ornament2">@</span>&gt;&gt;&gt;<span class="calendar-ornament2">@</span>&lt;<span class="calendar-ornament1">o</span>&lt;&lt;<span class="calendar-ornament2">@</span>&lt;<span class="calendar-ornament0">O</span>&lt;&lt;<span class="calendar-ornament0">O</span>&gt;<span class="calendar-ornament3">*</span>&gt;<span class="calendar-ornament0">O</span>&gt;&gt;<span class="calendar-ornament2">@</span>&gt;&gt;&gt;<span class="calendar-ornament3">*</span>&lt;   </a>
+        <a aria-label="Day 1" class="calendar-day1">&gt;<span class="calendar-ornament1">o</span>&lt;&lt;&lt;<span class="calendar-ornament2">@</span>&lt;<span class="calendar-ornament1">o</span>&lt;&lt;<span class="calendar-ornament1">o</span>&lt;<span class="calendar-ornament0">O</span>&gt;<span class="calendar-ornament2">@</span>&lt;&lt;<span class="calendar-ornament1">o</span>&lt;&lt;<span class="calendar-ornament1">o</span>&lt;&lt;<span class="calendar-ornament3">*</span>&gt;&gt;&gt;<span class="calendar-ornament1">o</span>&lt;&lt;&lt;<span class="calendar-ornament3">*</span>&lt;&lt;&lt;<span class="calendar-ornament3">*</span>&lt;&lt;<span class="calendar-ornament2">@</span>&gt;&gt;&gt;<span class="calendar-ornament3">*</span>&lt;&lt;&lt;<span class="calendar-ornament2">@</span>&lt;&lt;  </a>
+        <span class="calendar-trunk">                      |   |                             
+                              |   |                             
+                   _  _ __ ___|___|___ __ _  _           </span>       
+        </pre>
+    </div>
+</div>
+  
     
-    <tr><td class=sep></td></tr>
-    <td rowspan=1><b>2020</b>:</td>
-    <td></td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2020" target="_blank">link</a></td>
-    <td></td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2020" target="_blank">link</a></td>
-    <td></td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2020" target="_blank">link</a></td>
-</tr>    
-    <td></td>
-    <td class=task>--- <a href="https://adventofcode.com/2020/day/1" target="_blank">Day 1</a>: Report Repair ---</td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2020/Day01/Solution.cs" class=day-success target="_blank">[**]</a></td>
-    <td>&lt;1ms</td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2020/Day01.cpp" class=day-success target="_blank">[**]</a></td>
-    <td>&lt;1ms</td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2020/1/code.py" class=day-success target="_blank">[**]</a></td>
-    <td>80ms</td>
+</div>
 
-    <!--
-    <tr><td class=sep></td></tr>
-    <td rowspan=1><b>2019</b>:</td>
-    <td></td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2019" target="_blank">link</a></td>
-    <td></td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2019" target="_blank">link</a></td>
-    <td></td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2019" target="_blank">link</a></td>
-</tr>    
-    <td></td>
-    <td class=task>--- <a href="https://adventofcode.com/2019/day/1" target="_blank">Day 1</a>: The Tyranny of the Rocket Equation ---</td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2019/Day01/Solution.cs" class=day-success target="_blank">[**]</a></td>
-    <td>-</td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2019/Day01.cpp" class=day-success target="_blank">[**]</a></td>
-    <td>-</td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/Python/2019/1/code.py" class=day-success target="_blank">[**]</a></td>
-    <td>-</td>
--->
-
-    <tr><td class=sep></td></tr>
-    <td rowspan=1><b>2015</b>:</td>
-    <td></td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015" target="_blank">link</a></td>
-    <td></td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015" target="_blank">link</a></td>
-    <td></td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015" target="_blank">link</a></td>
-</tr>    
-    <td></td>
-    <td class=task>--- <a href="https://adventofcode.com/2015/day/1" target="_blank">Day 1</a>: Not Quite Lisp ---</td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day01/Solution.cs" class=day-success target="_blank">[**]</a></td>
-    <td>&lt;1ms</td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015/Day01_2015.cpp" class=day-success target="_blank">[**]</a></td>
-    <td>&lt;1ms</td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/1/code.py" class=day-success target="_blank">[**]</a></td>
-    <td>&lt;1ms</td>
-</tr>
-    <td></td>
-    <td class=task>--- <a href="https://adventofcode.com/2015/day/2" target="_blank">Day 2</a>: I Was Told There Would Be No Math ---</td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day02/Solution.cs" class=day-success target="_blank">[**]</a></td>
-    <td>2ms</td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015/Day02_2015.cpp" class=day-success target="_blank">[**]</a></td>
-    <td>&lt;1ms</td>
-    <td><a href="https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/2/code.py" class=day-success target="_blank">[**]</a></td>
-    <td>7ms</td>
-
-    </table>
 <br/>
 <body>
 <html>
