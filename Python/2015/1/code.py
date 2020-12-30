@@ -1,4 +1,4 @@
-# Advent of code Year 2015 Day 4 solution
+# Advent of code Year 2015 Day 1 solution
 
 import sys
 import fileinput

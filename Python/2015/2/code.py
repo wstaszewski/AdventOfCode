@@ -1,4 +1,4 @@
-# Advent of code Year 2015 Day 4 solution
+# Advent of code Year 2015 Day 2 solution
 
 import sys
 import fileinput
@@ -13,7 +13,7 @@ else:
     with open((__file__.rstrip("code.py")+"input.txt"), 'r') as input_file:
         input = input_file.read().split("\n")
 
-print("--- Day 1: I Was Told There Would Be No Math ---")
+print("--- Day 2: I Was Told There Would Be No Math ---")
 
 ttime = 0
 # Part 1
