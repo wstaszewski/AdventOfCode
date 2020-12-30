@@ -19,12 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2015\Day01.cpp" />
+    <ClCompile Include="2015\Day01_2015.cpp" />
+    <ClCompile Include="2015\Day02_2015.cpp" />
     <ClCompile Include="2020\Day01.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="2015\Day01.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="2015\Day02.txt">
       <DeploymentContent>true</DeploymentContent>
     </Text>
     <Text Include="2020\Day01.txt">

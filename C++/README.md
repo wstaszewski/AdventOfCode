@@ -13,4 +13,4 @@ The aim of project is to explore the world of C++17 STL while implementing vario
 |Advent of Code 2018 | - |
 |Advent of Code 2017 | - |
 |Advent of Code 2016 | - |
-|Advent of Code 2015 | <sup>1</sup>&frasl;<sub>25</sub> |
+|Advent of Code 2015 | <sup>2</sup>&frasl;<sub>25</sub> |

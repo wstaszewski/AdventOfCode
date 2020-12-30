@@ -11,7 +11,7 @@ python 2015\1\code.py 2015\1\input.txt
 | Day | Name | Status | Time | Solution | 
 |:---:|:---|:---:|:---:|:---|
 | 01 | [Not Quite Lisp](https://adventofcode.com/2015/day/1) | ✓ | <1ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/1/code.py) |
-| 02 | [I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2) | ½ | - | - |
+| 02 | [I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2) | ✓ | 7ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/2/code.py) |
 | 03 | [Perfectly Spherical Houses in a Vacuum](https://adventofcode.com/2015/day/3) | - | - | - |
 | 04 | [The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4) | - | - | - |
 | 05 | [Doesn't He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5) | - | - | - |
@@ -34,5 +34,5 @@ python 2015\1\code.py 2015\1\input.txt
 | 22 | [Wizard Simulator 20XX](https://adventofcode.com/2015/day/22) | - | - | - |
 | 23 | [Opening the Turing Lock](https://adventofcode.com/2015/day/23) | - | - | - |
 | 24 | [It Hangs in the Balance](https://adventofcode.com/2015/day/24) | - | - | - |
-| 25 | [Let It Snow](https://adventofcode.com/2015/day/25) | - | - | - |
+| 25 | [Let It Snow](https://adventofcode.com/2015/day/25) | ½ | - | - |
 

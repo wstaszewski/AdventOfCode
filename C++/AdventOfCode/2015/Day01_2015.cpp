@@ -7,7 +7,7 @@
 namespace AoC2015
 {
 
-	class Day01
+	class Day01_2015
 	{
 	private:
 		int part_one(const std::string& s)

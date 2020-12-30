@@ -5,7 +5,7 @@
 | Day | Name | Status | Time | Solution | 
 |:---:|:---|:---:|:---:|:---|
 | 01 | [Not Quite Lisp](https://adventofcode.com/2015/day/1) | ✓ | <1ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day01/Solution.cs) |
-| 02 | [I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2) | ½ | - |  - |
+| 02 | [I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2) | ✓ | 2ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day02/Solution.cs) |
 | 03 | [Perfectly Spherical Houses in a Vacuum](https://adventofcode.com/2015/day/3) | - | - |  - |
 | 04 | [The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4) | - | - |  - |
 | 05 | [Doesn't He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5) | - | - |  - |
@@ -28,5 +28,5 @@
 | 22 | [Wizard Simulator 20XX](https://adventofcode.com/2015/day/22) | - | - |  - |
 | 23 | [Opening the Turing Lock](https://adventofcode.com/2015/day/23) | - | - |  - |
 | 24 | [It Hangs in the Balance](https://adventofcode.com/2015/day/24) | - | - |  - |
-| 25 | [Let It Snow](https://adventofcode.com/2015/day/25) | - | - |  - |
+| 25 | [Let It Snow](https://adventofcode.com/2015/day/25) | ½ | - |  - |
 

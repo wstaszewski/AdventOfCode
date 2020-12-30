@@ -12,8 +12,8 @@ namespace AoC2020
 	private:
 		int part_one(const std::vector<int>& vec)
 		{
-			for (auto a : vec)
-				for (auto b : vec)
+			for (const auto a : vec)
+				for (const auto b : vec)
 					if (a + b == 2020)
 						return  a * b;
 			return -1;
@@ -21,9 +21,9 @@ namespace AoC2020
 
 		int part_two(const std::vector<int>& vec)
 		{
-			for (auto a : vec)
-				for (auto b : vec)
-					for (auto c : vec)
+			for (const auto a : vec)
+				for (const auto b : vec)
+					for (const auto c : vec)
 						if (a + b + c == 2020)
 							return  a * b * c;
 

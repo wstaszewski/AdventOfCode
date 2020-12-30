@@ -21,14 +21,17 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2015\Day01.cpp">
-      <Filter>Source Files\2015</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="2020\Day01.cpp">
       <Filter>Source Files\2020</Filter>
+    </ClCompile>
+    <ClCompile Include="2015\Day01_2015.cpp">
+      <Filter>Source Files\2015</Filter>
+    </ClCompile>
+    <ClCompile Include="2015\Day02_2015.cpp">
+      <Filter>Source Files\2015</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -37,6 +40,9 @@
     </Text>
     <Text Include="2020\Day01.txt">
       <Filter>Source Files\2020</Filter>
+    </Text>
+    <Text Include="2015\Day02.txt">
+      <Filter>Source Files\2015</Filter>
     </Text>
   </ItemGroup>
 </Project>
