@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -6,13 +7,6 @@ namespace AdventOfCode.Solutions.Year2015
 
     class Day03 : ASolution
     {
-        HashSet<House> visitedHouses;
-        int globalX;
-        int globalY;
-        int globalXS;
-        int globalYS;
-        int step;
-
         public Day03() : base(3, 2015, "Perfectly Spherical Houses in a Vacuum")
         {
 
@@ -20,123 +14,55 @@ namespace AdventOfCode.Solutions.Year2015
 
         protected override string SolvePartOne()
         {
-            visitedHouses = new HashSet<House>();
-            globalX = 0;
-            globalY = 0;
-            visitedHouses.Add(new House(0, 0));
-            char[] coordinates = Input.ToCharArray();
-            foreach (char coord in coordinates)
+            var watch = System.Diagnostics.Stopwatch.StartNew();
+
+            int x = 0;
+            int y = 0;
+            var hashSet = new HashSet<Tuple<int, int>>();
+            hashSet.Add(Tuple.Create(0, 0));
+            foreach (var chr in Input)
             {
-                switch (coord)
-                {
-                    case '>':
-                        globalX++;
-                        break;
-                    case '<':
-                        globalX--;
-                        break;
-                    case '^':
-                        globalY++;
-                        break;
-                    case 'v':
-                        globalY--;
-                        break;
-                }
-                House h = new House(globalX, globalY);
-                if (visitedHouses.Any(hh => hh.x == h.x && hh.y == h.y))
-                    visitedHouses.First(hh => hh.x == h.x && hh.y == h.y).incrementHowManyPresents();
-                else
-                    visitedHouses.Add(h);
+                x += chr == '>' ? 1 : (chr == '<' ? -1 : 0);
+                y += chr == 'v' ? 1 : (chr == '^' ? -1 : 0);
+                hashSet.Add(Tuple.Create(x, y));
             }
 
-            return visitedHouses.Count.ToString();
+            watch.Stop();
+            this.TPart1 = watch.ElapsedMilliseconds.ToString();
+            return hashSet.Count.ToString();
         }
 
         protected override string SolvePartTwo()
         {
-            visitedHouses = new HashSet<House>();
-            globalX = 0;
-            globalY = 0;
-            globalXS = 0;
-            globalYS = 0;
-            step = 0;
-            visitedHouses.Add(new House(0, 0));
-            char[] coordinates = Input.ToCharArray();
-            foreach (char coord in coordinates)
+            var watch = System.Diagnostics.Stopwatch.StartNew();
+
+            int[] positionSanta = new int[] { 0, 0 };
+            int[] positionRobot = new int[] { 0, 0 };
+            var hashSet = new HashSet<Tuple<int, int>>();
+            hashSet.Add(Tuple.Create(0, 0));
+            int i = 0;
+            foreach (var chr in Input)
             {
-                step++;
-                if (step % 2 == 0)
+                switch(i)
                 {
-                    switch (coord)
-                    {
-                        case '>':
-                            globalX++;
-                            break;
-                        case '<':
-                            globalX--;
-                            break;
-                        case '^':
-                            globalY++;
-                            break;
-                        case 'v':
-                            globalY--;
-                            break;
-                    }
-                    House h = new House(globalX, globalY);
-                    if (visitedHouses.Any(hh => hh.x == h.x && hh.y == h.y))
-                        visitedHouses.First(hh => hh.x == h.x && hh.y == h.y).incrementHowManyPresents();
-                    else
-                        visitedHouses.Add(h);
-                }
-                else
-                {
-                    switch (coord)
-                    {
-                        case '>':
-                            globalXS++;
-                            break;
-                        case '<':
-                            globalXS--;
-                            break;
-                        case '^':
-                            globalYS++;
-                            break;
-                        case 'v':
-                            globalYS--;
-                            break;
-                    }
-                    House h = new House(globalXS, globalYS);
-                    if (visitedHouses.Any(hh => hh.x == h.x && hh.y == h.y))
-                        visitedHouses.First(hh => hh.x == h.x && hh.y == h.y).incrementHowManyPresents();
-                    else
-                        visitedHouses.Add(h);
+                    case 0:
+                        positionSanta[0] += chr == '>' ? 1 : (chr == '<' ? -1 : 0);
+                        positionSanta[1] += chr == 'v' ? 1 : (chr == '^' ? -1 : 0);
+                        hashSet.Add(Tuple.Create(positionSanta[0], positionSanta[1]));
+                        break;
+                    case 1:
+                        positionRobot[0] += chr == '>' ? 1 : (chr == '<' ? -1 : 0);
+                        positionRobot[1] += chr == 'v' ? 1 : (chr == '^' ? -1 : 0);
+                        hashSet.Add(Tuple.Create(positionRobot[0], positionRobot[1]));
+                        break;
                 }
 
+                i = 1 - i;
             }
 
-            return visitedHouses.Count.ToString();
-        }
-    }
-
-    class House
-    {
-        public int x, y;
-        int howManyPresents = 0;
-
-        public House(int x, int y)
-        {
-            this.x = x;
-            this.y = y;
-        }
-
-        public int getHowManyPresents()
-        {
-            return this.howManyPresents;
-        }
-
-        public void incrementHowManyPresents()
-        {
-            this.howManyPresents++;
+            watch.Stop();
+            this.TPart2 = watch.ElapsedMilliseconds.ToString();
+            return hashSet.Count.ToString();
         }
     }
 }

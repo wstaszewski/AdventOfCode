@@ -39,3 +39,6 @@ Debug/*
 *.exe
 *.out
 *.app
+
+# Local configuration
+AdventOfCode/20*/Day**.txt

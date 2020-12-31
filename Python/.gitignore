@@ -130,3 +130,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Local configuration
+20*/*/input
+20**/*/input
