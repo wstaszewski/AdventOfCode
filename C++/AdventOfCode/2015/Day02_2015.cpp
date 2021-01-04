@@ -13,7 +13,7 @@ namespace AoC2015
 	class Day02_2015
 	{
 	private:
-		int part_one(std::vector<std::vector<int>>& vec)
+		int part_one(const std::vector<std::vector<int>>& vec)
 		{
 			int paper = 0;
 			for (const auto ints : vec)

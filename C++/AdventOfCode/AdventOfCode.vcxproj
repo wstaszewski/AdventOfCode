@@ -22,8 +22,10 @@
     <ClCompile Include="2015\Day01_2015.cpp" />
     <ClCompile Include="2015\Day02_2015.cpp" />
     <ClCompile Include="2015\Day03_2015.cpp" />
+    <ClCompile Include="2015\Day04_2015.cpp" />
     <ClCompile Include="2020\Day01.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Utils\md5.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="2015\Day01.txt">
@@ -35,9 +37,15 @@
     <Text Include="2015\Day03.txt">
       <DeploymentContent>true</DeploymentContent>
     </Text>
+    <Text Include="2015\Day04.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
     <Text Include="2020\Day01.txt">
       <DeploymentContent>true</DeploymentContent>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utils\md5.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -36,6 +36,12 @@
     <ClCompile Include="2015\Day03_2015.cpp">
       <Filter>Source Files\2015</Filter>
     </ClCompile>
+    <ClCompile Include="2015\Day04_2015.cpp">
+      <Filter>Source Files\2015</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\md5.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="2015\Day01.txt">
@@ -50,5 +56,13 @@
     <Text Include="2015\Day03.txt">
       <Filter>Source Files\2015</Filter>
     </Text>
+    <Text Include="2015\Day04.txt">
+      <Filter>Source Files\2015</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utils\md5.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
