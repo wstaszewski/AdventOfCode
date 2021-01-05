@@ -19,27 +19,27 @@ print("--- Day 4: The Ideal Stocking Stuffer ---")
 ttime = 0
 # Part 1
 start_time = datetime.datetime.now()
-part1 = ""
+part1 = 0
 for i in range(1000000):
     h = md5((input + str(i)).encode()).hexdigest()
     if h[:5] == '00000':
-        part1 = h
+        part1 = i
         break
 
 time_elapsed_ms = (datetime.datetime.now() - start_time).total_seconds() * 1000
 ttime += time_elapsed_ms
-print(f"Part One: ", part1, "done in", "%.4f" % time_elapsed_ms,  "ms")
+print(f"Part One:", part1, "done in", "%.4f" % time_elapsed_ms,  "ms")
 
 # Part 2
-part2 = ""
-for i in range(1000000):
+part2 = 0
+for i in range(100000000):
     h = md5((input + str(i)).encode()).hexdigest()
-    if h[:5] == '000000':
-        part1 = h
+    if h[:6] == '000000':
+        part2 = i
         break
 
 time_elapsed_ms = (datetime.datetime.now() - start_time).total_seconds() * 1000
 ttime += time_elapsed_ms
-print(f"Part Two: ", part2, "done in", "%.4f" % time_elapsed_ms,  "ms")
+print(f"Part Two:", part2, "done in", "%.4f" % time_elapsed_ms,  "ms")
 
 print(ttime, "ms")

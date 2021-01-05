@@ -20,7 +20,7 @@ start_time = datetime.datetime.now()
 part1 = input.count('(') - input.count(')')
 time_elapsed_ms = (datetime.datetime.now() - start_time).total_seconds() * 1000
 ttime += time_elapsed_ms
-print(f"Part One: ", part1, "done in", "%.4f" % time_elapsed_ms,  "ms")
+print(f"Part One:", part1, "done in", "%.4f" % time_elapsed_ms,  "ms")
 
 # Part 2
 part2 = 0
@@ -37,6 +37,6 @@ for i, char in enumerate(input):
                            start_time).total_seconds() * 1000
         ttime += time_elapsed_ms
         break
-print(f"Part Two: ", part2, "done in", "%.4f" % time_elapsed_ms,  "ms")
+print(f"Part Two:", part2, "done in", "%.4f" % time_elapsed_ms,  "ms")
 
 print(ttime, "ms")
