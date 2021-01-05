@@ -58,7 +58,7 @@ namespace AoC2015
 			for (int i = 0; i < s.size() - 1; i++)
 			{
 				std::string pair = s.substr(i, 2);
-				if (s.find(pair, i + 2) != -1)
+				if (s.find(pair, static_cast<std::basic_string<char, std::char_traits<char>, std::allocator<char>>::size_type>(i) + 2) != -1)
 					return true;
 			}
 
@@ -120,7 +120,7 @@ namespace AoC2015
 			auto t_part1 = std::chrono::duration<double>((t1 - t0) * 1000).count();
 			auto t_part2 = std::chrono::duration<double>((t2 - t1) * 1000).count();
 
-			std::cout << "--- Day 2: I Was Told There Would Be No Math ---" << std::endl;
+			std::cout << "--- Day 5: Doesn't He Have Intern-Elves For This? ---" << std::endl;
 			std::cout << "Part 1: " << p1 << " done in " << t_part1 << "ms" << std::endl;
 			std::cout << "Part 2: " << p2 << " done in " << t_part2 << "ms" << std::endl;
 			std::cout << t_part1 + t_part2 << "ms" << std::endl << std::endl;
