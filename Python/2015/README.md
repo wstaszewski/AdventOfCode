@@ -14,7 +14,7 @@ python 2015\1\code.py 2015\1\input.txt
 | 02 | [I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2) | ✓ | ~7ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/2/code.py) |
 | 03 | [Perfectly Spherical Houses in a Vacuum](https://adventofcode.com/2015/day/3) | ✓ | ~17ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/3/code.py) |
 | 04 | [The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4) | ✓ | ~2s | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/4/code.py) |
-| 05 | [Doesn't He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5) | - | - | - |
+| 05 | [Doesn't He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5) | ✓ | ~18ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/5/code.py) |
 | 06 | [Probably a Fire Hazard](https://adventofcode.com/2015/day/6) | - | - | - |
 | 07 | [Some Assembly Required](https://adventofcode.com/2015/day/7) | - | - | - |
 | 08 | [Matchsticks](https://adventofcode.com/2015/day/8) | - | - | - |

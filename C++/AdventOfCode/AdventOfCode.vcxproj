@@ -23,6 +23,7 @@
     <ClCompile Include="2015\Day02_2015.cpp" />
     <ClCompile Include="2015\Day03_2015.cpp" />
     <ClCompile Include="2015\Day04_2015.cpp" />
+    <ClCompile Include="2015\Day05_2015.cpp" />
     <ClCompile Include="2020\Day01.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Utils\md5.cpp" />
@@ -38,6 +39,9 @@
       <DeploymentContent>true</DeploymentContent>
     </Text>
     <Text Include="2015\Day04.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="2015\Day05.txt">
       <DeploymentContent>true</DeploymentContent>
     </Text>
     <Text Include="2020\Day01.txt">

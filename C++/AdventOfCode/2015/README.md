@@ -15,11 +15,11 @@ AdventOfCode.exe < \2015\Day01.txt
 
 | Day | Name | Status | Time | Solution | 
 |:---:|:---|:---:|:---:|:---|
-| 01 | [Not Quite Lisp](https://adventofcode.com/2015/day/1) | ✓ | <1ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015/Day01.cpp) |
-| 02 | [I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2) | ✓ | <1ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015/Day02.cpp) |
-| 03 | [Perfectly Spherical Houses in a Vacuum](https://adventofcode.com/2015/day/3) | ✓ | <2ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015/Day03.cpp) |
-| 04 | [The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4) | ✓ | ~13s | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015/Day04.cpp) |
-| 05 | [Doesn't He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5) | - | - | - |
+| 01 | [Not Quite Lisp](https://adventofcode.com/2015/day/1) | ✓ | <1ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015/Day01_2015.cpp) |
+| 02 | [I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2) | ✓ | <1ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015/Day02_2015.cpp) |
+| 03 | [Perfectly Spherical Houses in a Vacuum](https://adventofcode.com/2015/day/3) | ✓ | <2ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015/Day03_2015.cpp) |
+| 04 | [The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4) | ✓ | ~13s | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015/Day04_2015.cpp) |
+| 05 | [Doesn't He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5) | ✓ | <1ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%2B%2B/AdventOfCode/2015/Day05_2015.cpp) |
 | 06 | [Probably a Fire Hazard](https://adventofcode.com/2015/day/6) | - | - | - |
 | 07 | [Some Assembly Required](https://adventofcode.com/2015/day/7) | - | - | - |
 | 08 | [Matchsticks](https://adventofcode.com/2015/day/8) | - | - | - |
