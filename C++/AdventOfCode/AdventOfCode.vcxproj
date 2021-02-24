@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -24,6 +24,7 @@
     <ClCompile Include="2015\Day03_2015.cpp" />
     <ClCompile Include="2015\Day04_2015.cpp" />
     <ClCompile Include="2015\Day05_2015.cpp" />
+    <ClCompile Include="2015\Day06_2015.cpp" />
     <ClCompile Include="2020\Day01.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Utils\md5.cpp" />
@@ -42,6 +43,9 @@
       <DeploymentContent>true</DeploymentContent>
     </Text>
     <Text Include="2015\Day05.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="2015\Day06.txt">
       <DeploymentContent>true</DeploymentContent>
     </Text>
     <Text Include="2020\Day01.txt">
