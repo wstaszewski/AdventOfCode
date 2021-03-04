@@ -9,9 +9,9 @@
 | 03 | [Perfectly Spherical Houses in a Vacuum](https://adventofcode.com/2015/day/3) | ✓ | ~3ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day03/Solution.cs) |
 | 04 | [The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4) | ✓ | ~13s | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day04/Solution.cs) |
 | 05 | [Doesn't He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5) | ✓ | ~7ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day05/Solution.cs) |
-| 06 | [Probably a Fire Hazard](https://adventofcode.com/2015/day/6) | - | - |  - |
-| 07 | [Some Assembly Required](https://adventofcode.com/2015/day/7) | - | - |  - |
-| 08 | [Matchsticks](https://adventofcode.com/2015/day/8) | - | - | - |
+| 06 | [Probably a Fire Hazard](https://adventofcode.com/2015/day/6) | ✓ | - | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day06/Solution.cs) | | - |  - |
+| 07 | [Some Assembly Required](https://adventofcode.com/2015/day/7) | ✓ | - | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day07/Solution.cs) | | - |  - |
+| 08 | [Matchsticks](https://adventofcode.com/2015/day/8) | ✓ | - | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day08/Solution.cs) | | - | - |
 | 09 | [All in a Single Night](https://adventofcode.com/2015/day/9) | - | - |  - |
 | 10 | [Elves Look, Elves Say](https://adventofcode.com/2015/day/10) | - | - |  - |
 | 11 | [Corporate Policy](https://adventofcode.com/2015/day/11) | - | - |  - |
