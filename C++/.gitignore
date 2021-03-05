@@ -2,10 +2,16 @@
 .vs/*
 
 # Debug
-Release/*
+Debug/*
+[Dd]ebug/*
+*/[Dd]ebug/*
 
 # Release
-Debug/*
+x32/
+x64/
+Release/*
+[Rr]elease/*
+*/[Rr]elease/*
 
 # Prerequisites
 *.d
