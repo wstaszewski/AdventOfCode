@@ -36,6 +36,7 @@ ttime += time_elapsed_ms
 print(f"Part One:", part1, "done in", "%.4f" % time_elapsed_ms,  "ms")
 
 # Part 2
+start_time = datetime.datetime.now()
 part2 = 0
 locationSanta = (0, 0)
 locationRobot = (0, 0)

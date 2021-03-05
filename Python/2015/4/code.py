@@ -31,6 +31,7 @@ ttime += time_elapsed_ms
 print(f"Part One:", part1, "done in", "%.4f" % time_elapsed_ms,  "ms")
 
 # Part 2
+start_time = datetime.datetime.now()
 part2 = 0
 for i in range(100000000):
     h = md5((input + str(i)).encode()).hexdigest()

@@ -49,6 +49,7 @@ ttime += time_elapsed_ms
 print(f"Part One: ", part1, "done in", "%.4f" % time_elapsed_ms,  "ms")
 
 # Part 2
+start_time = datetime.datetime.now()
 part2 = 0
 grid = np.zeros((1000, 1000), 'int32')
 
