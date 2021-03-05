@@ -16,9 +16,9 @@ python 2015\1\code.py 2015\1\input.txt
 | 04 | [The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4) | ✓ | ~2s | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/4/code.py) |
 | 05 | [Doesn't He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5) | ✓ | ~18ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/5/code.py) |
 | 06 | [Probably a Fire Hazard](https://adventofcode.com/2015/day/6) | ✓ | ~144ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/6/code.py) |
-| 07 | [Some Assembly Required](https://adventofcode.com/2015/day/7) | - | - | - |
-| 08 | [Matchsticks](https://adventofcode.com/2015/day/8) | - | - | - |
-| 09 | [All in a Single Night](https://adventofcode.com/2015/day/9) | - | - | - |
+| 07 | [Some Assembly Required](https://adventofcode.com/2015/day/7) | ✓ | ~240ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/7/code.py) |
+| 08 | [Matchsticks](https://adventofcode.com/2015/day/8) | ✓ | ~3ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/8/code.py) |
+| 09 | [All in a Single Night](https://adventofcode.com/2015/day/9) | ✓ | ~230ms | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/Python/2015/9/code.py) |
 | 10 | [Elves Look, Elves Say](https://adventofcode.com/2015/day/10) | - | - | - |
 | 11 | [Corporate Policy](https://adventofcode.com/2015/day/11) | - | - | - |
 | 12 | [JSAbacusFramework.io](https://adventofcode.com/2015/day/12) | - | - | - |

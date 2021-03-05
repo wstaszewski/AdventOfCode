@@ -12,7 +12,7 @@
 | 06 | [Probably a Fire Hazard](https://adventofcode.com/2015/day/6) | ✓ | - | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day06/Solution.cs) | | - |  - |
 | 07 | [Some Assembly Required](https://adventofcode.com/2015/day/7) | ✓ | - | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day07/Solution.cs) | | - |  - |
 | 08 | [Matchsticks](https://adventofcode.com/2015/day/8) | ✓ | - | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day08/Solution.cs) | | - | - |
-| 09 | [All in a Single Night](https://adventofcode.com/2015/day/9) | - | - |  - |
+| 09 | [All in a Single Night](https://adventofcode.com/2015/day/9) | ✓ | - | [code](https://github.com/wstaszewski/AdventOfCode/blob/main/C%23/AdventOfCode/Solutions/Year2015/Day09/Solution.cs) | | - | - |
 | 10 | [Elves Look, Elves Say](https://adventofcode.com/2015/day/10) | - | - |  - |
 | 11 | [Corporate Policy](https://adventofcode.com/2015/day/11) | - | - |  - |
 | 12 | [JSAbacusFramework.io](https://adventofcode.com/2015/day/12) | - | - |  - |
