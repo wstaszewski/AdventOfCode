@@ -1,0 +1,85 @@
+.calendar a.calendar-complete, .calendar a.calendar-verycomplete {
+  color: #009900;
+  font-size: 21px;
+}
+.calendar a.calendar-day25.calendar-complete,
+.calendar a.calendar-day25.calendar-verycomplete{ color: #ffff66; }
+.calendar a.calendar-day25.calendar-verycomplete{ text-shadow: 0 0 5px #ffff66; }
+
+.calendar .calendar-trunk { color: #cccccc; }
+
+.calendar a                       .calendar-ornament0 { color: inherit; font-size: 21px;}
+.calendar a                       .calendar-ornament1 { color: inherit; font-size: 21px;}
+.calendar a                       .calendar-ornament2 { color: inherit; font-size: 21px;}
+.calendar a                       .calendar-ornament3 { color: inherit; font-size: 21px;}
+.calendar a.calendar-verycomplete .calendar-ornament0 { color: #0066ff; text-shadow: 0 0 5px #0066ff; font-size: 21px;}
+.calendar a.calendar-verycomplete .calendar-ornament1 { color: #ff9900; text-shadow: 0 0 5px #ff9900; font-size: 21px;}
+.calendar a.calendar-verycomplete .calendar-ornament2 { color: #ff0000; text-shadow: 0 0 5px #ff0000; font-size: 21px;}
+.calendar a.calendar-verycomplete .calendar-ornament3 { color: #ffff66; text-shadow: 0 0 5px #ffff66; font-size: 21px;}
+
+.calendar.calendar-beckon .calendar-day1  { animation: anim-beckon 3s infinite -2.875s; }
+.calendar.calendar-beckon .calendar-day2  { animation: anim-beckon 3s infinite -2.750s; }
+.calendar.calendar-beckon .calendar-day3  { animation: anim-beckon 3s infinite -2.625s; }
+.calendar.calendar-beckon .calendar-day4  { animation: anim-beckon 3s infinite -2.500s; }
+.calendar.calendar-beckon .calendar-day5  { animation: anim-beckon 3s infinite -2.375s; }
+.calendar.calendar-beckon .calendar-day6  { animation: anim-beckon 3s infinite -2.250s; }
+.calendar.calendar-beckon .calendar-day7  { animation: anim-beckon 3s infinite -2.125s; }
+.calendar.calendar-beckon .calendar-day8  { animation: anim-beckon 3s infinite -2.000s; }
+.calendar.calendar-beckon .calendar-day9  { animation: anim-beckon 3s infinite -1.875s; }
+.calendar.calendar-beckon .calendar-day10 { animation: anim-beckon 3s infinite -1.750s; }
+.calendar.calendar-beckon .calendar-day11 { animation: anim-beckon 3s infinite -1.625s; }
+.calendar.calendar-beckon .calendar-day12 { animation: anim-beckon 3s infinite -1.500s; }
+.calendar.calendar-beckon .calendar-day13 { animation: anim-beckon 3s infinite -1.375s; }
+.calendar.calendar-beckon .calendar-day14 { animation: anim-beckon 3s infinite -1.250s; }
+.calendar.calendar-beckon .calendar-day15 { animation: anim-beckon 3s infinite -1.125s; }
+.calendar.calendar-beckon .calendar-day16 { animation: anim-beckon 3s infinite -1.000s; }
+.calendar.calendar-beckon .calendar-day17 { animation: anim-beckon 3s infinite -0.875s; }
+.calendar.calendar-beckon .calendar-day18 { animation: anim-beckon 3s infinite -0.750s; }
+.calendar.calendar-beckon .calendar-day19 { animation: anim-beckon 3s infinite -0.625s; }
+.calendar.calendar-beckon .calendar-day20 { animation: anim-beckon 3s infinite -0.500s; }
+.calendar.calendar-beckon .calendar-day21 { animation: anim-beckon 3s infinite -0.375s; }
+.calendar.calendar-beckon .calendar-day22 { animation: anim-beckon 3s infinite -0.250s; }
+.calendar.calendar-beckon .calendar-day23 { animation: anim-beckon 3s infinite -0.125s; }
+.calendar.calendar-beckon .calendar-day24 { animation: anim-beckon 3s infinite -0.000s; }
+.calendar.calendar-beckon > span { animation-name: anim-beckon-dark ! important; }
+@keyframes anim-beckon {
+  0%   { color: #666666; }
+  80%  { color: #666666; }
+  90%  { color: #00ff00; }
+  100% { color: #666666; }
+}
+@keyframes anim-beckon-dark {
+  0%   { color: #333333; }
+  80%  { color: #333333; }
+  90%  { color: #009900; }
+  100% { color: #333333; }
+}
+
+.calendar-bkg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  color: #ffffff;
+  cursor: default;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
+.calendar-bkg div:nth-child(1) { opacity: .04; }
+.calendar-bkg div:nth-child(2) { opacity: .08; }
+.calendar-bkg div:nth-child(3) { opacity: .12; }
+.calendar-bkg div:nth-child(4) { opacity: .16; }
+.calendar-bkg div {
+  text-align: justify;
+  margin-bottom: -1.2em;
+}
+.calendar-bkg div::after {
+  content: "_";
+  display: inline-block;
+  visibility: hidden;
+  width: 100%;
+}
